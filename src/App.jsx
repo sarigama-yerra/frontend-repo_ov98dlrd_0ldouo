@@ -8,7 +8,7 @@ import Doctors from './pages/Doctors'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,6 +17,11 @@ function App() {
         <Route path="/labs" element={<Labs />} />
         <Route path="/doctors" element={<Doctors />} />
       </Routes>
+      <footer className="border-t border-sky-100 mt-12">
+        <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600">
+          © {new Date().getFullYear()} Medi Mitra • Your partner in better health
+        </div>
+      </footer>
     </div>
   )
 }
